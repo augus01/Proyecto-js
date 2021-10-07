@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2? family = Nunito: wght @ 200 & display = swap" rel="hoja de estilo">
+    <link href="https://fonts.googleapis.com/css2?family=Bellota:wght@300&display=swap" rel="stylesheet">
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha512-L7MWcK7FNPcwNqnLdZq86lTHYLdQqZaz5YcAgE+5cnGmlw8JT03QB2+oxL100UeB6RlzZLUxCGSS4/++mNZdxw==" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    
+    <link rel="stylesheet" href="styles/styles-index.css">
+    
+    <script src="js/funciones.js" defer></script>
+    <script src="js/productos.js" defer></script>
+    <script src="js/main.js" defer></script>
+
+    <title>Skills</title>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="head">
+            <a href="#logo"><img src="img/logo/logo_transparent.png" id="logo" alt=""></a>
+            <div class="interaciones" id="login">
+                <div class="interaciones__carrito">
+                    <i class="fas fa-shopping-cart fa-2x"></i>
+                    <p>Carro</p>
+                    <span id="number-carrito">0</span>
+                </div>
+                
+                <a href="index.html">Mi cuenta</a>
+            </div>
+            
+        </div>
+    </header>
+
+    <div class="menuNav">
+        <nav>
+            <ul>
+                <li><a href="#all-destacados">Productos</a></li>
+                <li><a href="#juegos-destacados">Juegos</a></li>
+                <li><a href="#figuras-destacadas">Figuras</a></li>
+
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <section class="ventas">
+
+            <div class="cajaVentas" id="cajaVentas">
+                <div class="carrusel">
+                    <img src="img/ratchet-and-clank-rift.jpg" alt="">
+                </div>
+
+                <!--Codigo lo más vendido-->
+                <h3>Lo más vendido</h3>
+
+                <div class="carruseldestacados" id="all-destacados">
+
+                    
+                </div>
+
+                <div class="botton-mas" id="botton-mas1">
+                    <button id="compraDestacados" onclick= "mostrarMasDestacados();" class="button">Ver otros</button>
+                </div>
+                <!--Codigo lo más vendido-->
+
+                <!--COdigo Juegos destacados-->
+                <h3>Juegos</h3>
+
+
+                <div class="carruseldestacados" id="juegos-destacados">
+                    
+                    <!--Codigo Juegos destacados-->
+                    <div id="hola"></div>
+                </div>
+                
+                <div class="botton-mas" id="botton-mas">
+                    <button id="compraJuegos" onclick= "mostrarMas(juegosdestacados2, 'juegos-destacados', cardsproductosgames, 'botton-mas');" class="button">Ver otros</button>
+                </div>
+                <p></p>
+                
+
+
+
+                <h3>Coleccionables</h3>
+
+
+                <!--Codigo Figuras destacadas-->
+                <div class="carruseldestacados" id="figuras-destacadas">
+
+                </div>
+                <div class="botton-mas"id="botton-mas2">
+                    <button id="compraFunkos" onclick= "mostrarMas(coleccionables2, 'figuras-destacadas', cardsproductosfunko, 'botton-mas2');" class="button">Ver otros</button>
+                </div>
+
+            </div>
+            
+        </section>
+        
+        
+    </main>
+    
+    
+    <!--Footer-->
+    <footer class="infoPiePagina">
+        <a href="#logo"><img src="img/logo/logo_transparent.png" id="logoPiePagina" alt=""></a>
+
+        <ul class="datos">
+            <li>Contacto</li>
+            <li>Email</li>
+            <li>Siguenos|ig|fc|tw</li>
+        </ul>
+
+        <ul class="datos">
+            <li>Preguntas frecuentes</li>
+            <li>Despachos</li>
+            <li>Seguimiento de ordenes</li>
+        </ul>
+
+    </footer>
+    <!--Footer-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</body>
+
+</html>
