@@ -1,4 +1,4 @@
-//Filtra los precios mayores al valor que ingrese el usuario
+
 function filtradoProductos() {
   const preciofiltrado = []
   let decide = prompt("¿Quieres filtrar un precio? Si/No");
