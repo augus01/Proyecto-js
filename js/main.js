@@ -33,7 +33,7 @@ mostrarCARDS(coleccionables, "figuras-destacadas", cardsproductosfunko);
 function mostrarCARDS(array, ubicacion, tipocard) {
     array.forEach((Producto) => {
         tipocard += `
-    <div class="cardProductos">
+    <div class="cardProductos" >
         <div class="img-productos">
             <img src=${Producto.img} alt="">
         </div>
@@ -55,14 +55,16 @@ function mostrarCARDS(array, ubicacion, tipocard) {
         document.getElementById(ubicacion).innerHTML = tipocard;
     });
 }
-
+const tiempo = 2000;
+        const imagenanimada = $('#animacionPrueba');
+        imagenanimada.fadeIn(tiempo).delay(tiempo).fadeOut(tiempo);
 
 function mostrarMas(array, ubicacionmas, tipocard, ubicacionbottom) {
     array.forEach((Producto) => {
         tipocard +=
             `<div class="cardProductos">
             <div class="img-productos">
-                <img src=${Producto.img} alt="">
+                <img id="animacionPrueba" src=${Producto.img} alt="">
             </div>
             <div class="pProductos">
                 <div class="producto-titulo">
@@ -84,8 +86,8 @@ function mostrarMas(array, ubicacionmas, tipocard, ubicacionbottom) {
     });
     let ocultar = `<button id="compraFunkos" onclick= "mostrarMasFunkos();" class="button" style="display:none">Ver más</button>`
     document.getElementById(ubicacionbottom).innerHTML = ocultar;
-    
+
 }
-const elemento = { "items": datosproducts }
-
-
+const elemento = {
+    "items": datosproducts
+}

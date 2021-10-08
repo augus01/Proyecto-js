@@ -32,9 +32,7 @@ function agregaralcarro(titulo, precio, imagen, ubicacion) {
 
 
   if (productoEncontrado != undefined) {
-    console.log("el producto se muestra")
     carro.push(productoEncontrado);
-    console.log(carro);
     $("#figuras-destacadas").append(`
   <div class="ventana__emergente">
     
