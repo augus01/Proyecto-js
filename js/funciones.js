@@ -1,4 +1,3 @@
-
 function filtradoProductos() {
   const preciofiltrado = []
   let decide = prompt("¿Quieres filtrar un precio? Si/No");
@@ -25,6 +24,7 @@ function ordenarArray(a, b) {
 }
 
 let alertaAgregado = ``;
+
 function agregaralcarro(titulo, precio, imagen, ubicacion) {
   const productoEncontrado = datosproducts.find(Producto => Producto.titulo === titulo);
   Producto => Producto.precio === precio;

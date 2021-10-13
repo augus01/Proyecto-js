@@ -88,6 +88,29 @@ function mostrarMas(array, ubicacionmas, tipocard, ubicacionbottom) {
     document.getElementById(ubicacionbottom).innerHTML = ocultar;
 
 }
-const elemento = {
-    "items": datosproducts
+let Productodelcarro = ``;
+function mostrarCarrito() {
+    carro.forEach((Producto) => {
+        Productodelcarro +=
+            `<div class="carrito-card">
+            <div class="carrito-img-productos">
+                <img id="carro-img-productos" src=${Producto.img} alt="">
+            </div>
+            <div class="carrito-producto">
+                <div class="carrito-producto-titulo">
+                    <h3>${Producto.titulo}</h3>
+                </div>
+                <div class="carrito-producto-precio">
+                        <p>$${Producto.precio}</p>
+                </div>
+            </div>
+            <div class="agrega-al-carro">
+                <button onclick="agregaralcarro('${Producto.titulo}', '${Producto.precio}', '${Producto.img}')" class="button-carro">
+                    <i class="bi bi-cart-plus"></i>
+                    <p>Agregar al carrito</p>
+                </button>
+            </div>
+        </div>`
+        document.getElementById("carrito-mostrado").innerHTML = Productodelcarro;
+    });
 }

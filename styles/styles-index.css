@@ -352,3 +352,34 @@ section{
     margin-top: 15px;
 }
 /*WINDOW SE AGREGO EL PRODUCTO*/
+
+/*Se muestra el carrito*/
+.carrito-mostrado{
+    position: absolute;
+    right:0;
+    z-index: 2;
+    background-color: #fff;
+    width: 28%;
+    
+}
+.carrito-card{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin-top: 15px;
+    
+    
+}
+.carrito-img-productos{
+    width:40%;
+    
+}
+.carrito-img-productos img{
+    width: 100px;
+    
+}
+.carrito-producto-titulo{
+    width: 200px;
+    
+}
+/*Se muestra el carrito*/
